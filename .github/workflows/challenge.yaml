@@ -1,1 +1,35 @@
-
+name: challenge
+on: push
+jobs:
+  job1:
+    name: First Job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Step1
+      uses: actions/checkout@v2
+    - name: Step2
+      run: env | sort
+  job2:
+    name: Second Job
+    runs-on: windows-latest
+    steps:
+    - name: Step 1
+      uses: actions/checkout@v2
+    - name: Step 2
+      run: "Get-childItem Env: | Sort-Object Name"
+  job3:
+    name: Third Job
+    runs-on: macos-latest
+    steps:
+    - name: Step 1
+      uses: actions/checkout@v2
+    - name: Step 2
+      run: "Get-childItem Env: | Sort-Object Name"
+  job4:
+    name: Fourth Job
+    runs-on: debian-latest
+    steps:
+    - name: Step 1
+      uses: actions/checkout@v2
+    - name: Step 2
+      run: env | sort
