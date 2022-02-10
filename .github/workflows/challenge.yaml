@@ -24,7 +24,7 @@ jobs:
     - name: Step 1
       uses: actions/checkout@v2
     - name: Step 2
-      run: myenv
+      run: $Env:PATH
   job4:
     name: Fourth Job
     runs-on: debian-latest
