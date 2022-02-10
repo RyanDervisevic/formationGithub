@@ -6,13 +6,14 @@ jobs:
 		runs-on: ubuntu-latest
 		steps:
 		- name: Step1
-		uses: actions/checkout@v2
-		-name: Step2
+		  uses: actions/checkout@v2
+		- name: Step2
 		run: env | sort
 	job2:
-		name: Second Jobruns-on: windows-latest
+		name: Second Job
+		runs-on: windows-latest
 		steps:
-		-name: Step 1
-		uses: actions/checkout@v2
-		-name: Step 2
+		- name: Step 1
+		  uses: actions/checkout@v2
+		- name: Step 2
 		run: "Get-childItem Env: | Sort-Object Name"
