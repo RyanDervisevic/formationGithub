@@ -24,7 +24,7 @@ jobs:
     - name: Step 1
       uses: actions/checkout@v2
     - name: Step 2
-      run: "Get-childItem Env: | Sort-Object Name"
+      run: myenv
   job4:
     name: Fourth Job
     runs-on: debian-latest
